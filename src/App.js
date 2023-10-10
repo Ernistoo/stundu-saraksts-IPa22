@@ -3,7 +3,7 @@ import Diena from "./Diena";
 
 
 
-// function App() {
+ function App() {
 //   const pirmdienasStundas = [
 //     "Nav Pupsiks :(",
 //     "Nav Pupsiks :(",
@@ -36,60 +36,71 @@ import Diena from "./Diena";
 const visuDienuStunduSaraksts = [
   {
     diena: "Pirmdiena",
+    
     stundas: [
-    "Nav Pupsiks :(",
-    "Nav Pupsiks :(",
-    "Pupsiks :)",
-    "Pupsiks :)"
-    ]
+        "Valsts aizardzības mācība",
+        "Valsts aizardzības mācība",
+        "Valsts aizardzības mācība",
+        "Valsts aizardzības mācība"
+      ]
+      // kab: [
+      //   "C.304-R.Lauga/Ē. Jermacāne",
+      //   "C.304-R.Lauga/Ē. Jermacāne",
+      //   "C.304-R.Lauga/Ē. Jermacāne",
+      //   "C.304-R.Lauga/Ē. Jermacāne"
+      // ]
+    
   },
   {
     diena: "Otrdiena",
     stundas: [
-      "Nav Pupsiks :(",
-      "Nav Pupsiks :(",
-      "Nav Pupsiks :(",
-      "Nav Pupsiks :("
-    ]
-  }
-  {
-    diena: "Tresdiena",
-    stundas: [
-      "Nav Pupsiks :(",
-      "Nav Pupsiks :(",
+      "Sports",
+      "'Valodas, kultūras izpratne un izpausmes'",
       "Pupsiks :)",
       "Pupsiks :)"
     ]
   },
   {
+    diena: "Tresdiena",
+    stundas: [
+      "Angļu valoda",
+      "Fizika",
+      "Datorsistēmas un datortīkli",
+      "Datorsistēmas un datortīkli"
+    ]
+  },
+  {
     diena: "Ceturtdiena",
     stundas: [
-      "Pupsiks :)",
-      "Nav Pupsiks :(",
-      "Nav Pupsiks :(",
-      "Nav Pupsiks :("
+      "Sociālās zinības un vēsture",
+      "Latviešu valoda un literatūra",
+      "Sports",
+      "Pupsiks :)"
     ]
   },
   {
     diena: "Piektdiena",
     stundas: [
-      "Nav Pupsiks :(",
-      "Nav Pupsiks :("
+      "Pupsiks :)",
+      "Sociālās zinības un vēsture",
+      "Fizika"
     ]
-  },
-]
+  }
+];
 
   return (
     
     <>
     <h1>Hi mom</h1>
-    <Diena nosaukums="Pirmdiena" stundas={pirmdienasStundas}/>
-    <Diena nosaukums="Otrdiena" stundas={otrdienasStundas}/>
-    <Diena nosaukums="Tresdiena" stundas={tresdienasStundas}/>
-    <Diena nosaukums="Ceturtdiena" stundas={ceturtdienasStundas}/>
-    <Diena nosaukums="Piektdiena" stundas={piektdienasStundas}/>
+
+    {
+      visuDienuStunduSaraksts.map((item, i)=>{
+        return <Diena className="sasa" nosaukums={item.diena} stundas={item.stundas} />
+      })
+    }
     </> 
   );
 }
+
 
 export default App;

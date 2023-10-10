@@ -1,5 +1,6 @@
 function Stunda(props) {
-    return <li>{props.name}</li>;
+    return <td>{props.name}</td>;
+    
     
 }
 ;
