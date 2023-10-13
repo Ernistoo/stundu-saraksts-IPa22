@@ -1,6 +1,6 @@
 import "./App.css"
 import Diena from "./Diena";
-
+import styles from "./App.module.css";
 
 
  function App() {
@@ -55,7 +55,7 @@ const visuDienuStunduSaraksts = [
     diena: "Otrdiena",
     stundas: [
       "Sports",
-      "'Valodas, kultūras izpratne un izpausmes'",
+      '"Valodas, kultūras izpratne un izpausmes"',
       "Pupsiks :)",
       "Pupsiks :)"
     ]
@@ -91,7 +91,7 @@ const visuDienuStunduSaraksts = [
   return (
     
     <>
-    <h1>Hi mom</h1>
+    <h1 className={styles.hello}>Hi mom</h1>
 
     {
       visuDienuStunduSaraksts.map((item, i)=>{

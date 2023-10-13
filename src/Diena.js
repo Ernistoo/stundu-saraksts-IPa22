@@ -1,4 +1,6 @@
-import Stunda from "./Stunda"
+import Stunda from "./Stunda";
+import style from "./Diena.module.css";
+
 
 function Diena (props) {
 
@@ -8,7 +10,7 @@ function Diena (props) {
    
     return (
     <>
-    <h2>{props.nosaukums}</h2>
+    <h2 className={style.yeah}>{props.nosaukums}</h2>
     <table>
     {stunduSarakstsJSX}
     </table>

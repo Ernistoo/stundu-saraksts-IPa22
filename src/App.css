@@ -10,7 +10,7 @@ h1{
 }
 
 table, td {
-    border: 5px dashed #332e2e;
+    border: 5px solid #332e2e;
   text-align: left;
 }
 table {
@@ -19,4 +19,7 @@ table {
 *{
     font-size: 25px;
     color: white;
+}
+.sasa{
+  color: pink;
 }
